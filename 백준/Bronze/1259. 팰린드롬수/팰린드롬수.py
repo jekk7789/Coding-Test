@@ -1,8 +1,9 @@
-while(True):
-    data = input()
-    if data == '0':
+while True:
+    data = list(map(int, input())) 
+    if data == [0]:
         break
-    elif data == data[::-1]:
-        print('yes')
+
+    if data == list(reversed(data)):
+        print("yes")
     else:
-        print('no')
+        print("no")
